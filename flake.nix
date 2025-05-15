@@ -32,7 +32,7 @@
         };
       in {
         default = pkgs.mkShell {
-          buildInputs = [ linguist ];
+          buildInputs = [ linguist pkgs.jq ];
           shellHook = ''
             export GEM_HOME=${linguist}/lib/ruby/gems/${ruby.version}
             export PATH=${linguist}/bin:$PATH
