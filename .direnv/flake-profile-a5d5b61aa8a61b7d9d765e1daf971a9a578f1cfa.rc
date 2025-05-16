@@ -15,7 +15,7 @@ export CONFIG_SHELL
 CXX='g++'
 export CXX
 HOSTTYPE='x86_64'
-HOST_PATH='/nix/store/3qhcmnpli1wg5hf91drj5jz6x6g76fgb-linguist/bin:/nix/store/cg09nslw3w6afyynjw484b86d47ic1cb-coreutils-9.7/bin:/nix/store/frspb25x6v43fwv6b0wna1fm5nsqcp0b-findutils-4.10.0/bin:/nix/store/8cs5vjkbwf2vicgms4km5k1kgbznhwip-diffutils-3.12/bin:/nix/store/1h8gf327cgid0jgjygrj31amp63mn7a7-gnused-4.9/bin:/nix/store/2wni3gbcf6fqwlfb2h9sv7jvqlpf1ylq-gnugrep-3.11/bin:/nix/store/f8x04xqd2cs274k0hgfzsrms6sby2fgx-gawk-5.3.2/bin:/nix/store/5jmcn57x2j9mkdr3j947cbja2hpxmhfn-gnutar-1.35/bin:/nix/store/04z4rhjadrnd0w3ib2sl42pa3xjgpf7p-gzip-1.14/bin:/nix/store/sysih19x8xx8l473d3qnr760hy758lkq-bzip2-1.0.8-bin/bin:/nix/store/agn71jakv0a9669k3zx5g9aqm2sl9z77-gnumake-4.4.1/bin:/nix/store/xg75pc4yyfd5n2fimhb98ps910q5lm5n-bash-5.2p37/bin:/nix/store/qd20g193gch8bj4h0h44wr97mw0bhkmf-patch-2.7.6/bin:/nix/store/fi495i6cz40rq1axig930jzyw7ln0zhm-xz-5.8.1-bin/bin:/nix/store/hb9v0qx9vk0420z5grlnv2y5wcf6dp6i-file-5.46/bin'
+HOST_PATH='/nix/store/3qhcmnpli1wg5hf91drj5jz6x6g76fgb-linguist/bin:/nix/store/2yi7k5ay6xj73rbfqf170gms922rjm2d-jq-1.7.1-bin/bin:/nix/store/cg09nslw3w6afyynjw484b86d47ic1cb-coreutils-9.7/bin:/nix/store/frspb25x6v43fwv6b0wna1fm5nsqcp0b-findutils-4.10.0/bin:/nix/store/8cs5vjkbwf2vicgms4km5k1kgbznhwip-diffutils-3.12/bin:/nix/store/1h8gf327cgid0jgjygrj31amp63mn7a7-gnused-4.9/bin:/nix/store/2wni3gbcf6fqwlfb2h9sv7jvqlpf1ylq-gnugrep-3.11/bin:/nix/store/f8x04xqd2cs274k0hgfzsrms6sby2fgx-gawk-5.3.2/bin:/nix/store/5jmcn57x2j9mkdr3j947cbja2hpxmhfn-gnutar-1.35/bin:/nix/store/04z4rhjadrnd0w3ib2sl42pa3xjgpf7p-gzip-1.14/bin:/nix/store/sysih19x8xx8l473d3qnr760hy758lkq-bzip2-1.0.8-bin/bin:/nix/store/agn71jakv0a9669k3zx5g9aqm2sl9z77-gnumake-4.4.1/bin:/nix/store/xg75pc4yyfd5n2fimhb98ps910q5lm5n-bash-5.2p37/bin:/nix/store/qd20g193gch8bj4h0h44wr97mw0bhkmf-patch-2.7.6/bin:/nix/store/fi495i6cz40rq1axig930jzyw7ln0zhm-xz-5.8.1-bin/bin:/nix/store/hb9v0qx9vk0420z5grlnv2y5wcf6dp6i-file-5.46/bin'
 export HOST_PATH
 IFS=' 	
 '
@@ -35,13 +35,13 @@ NIX_CC='/nix/store/dc6bahp3f5af2rxz3pal9m3kp4vx4rpy-gcc-wrapper-14.2.1.20250322'
 export NIX_CC
 NIX_CC_WRAPPER_TARGET_HOST_x86_64_unknown_linux_gnu='1'
 export NIX_CC_WRAPPER_TARGET_HOST_x86_64_unknown_linux_gnu
-NIX_CFLAGS_COMPILE=' -frandom-seed=g883ys2akk'
+NIX_CFLAGS_COMPILE=' -frandom-seed=r249yyfgvd -isystem /nix/store/2186473hfwk15m3cmpddck6jp28sjmkl-jq-1.7.1-dev/include -isystem /nix/store/2186473hfwk15m3cmpddck6jp28sjmkl-jq-1.7.1-dev/include'
 export NIX_CFLAGS_COMPILE
 NIX_ENFORCE_NO_NATIVE='1'
 export NIX_ENFORCE_NO_NATIVE
 NIX_HARDENING_ENABLE='bindnow format fortify fortify3 pic relro stackclashprotection stackprotector strictoverflow zerocallusedregs'
 export NIX_HARDENING_ENABLE
-NIX_LDFLAGS='-rpath /home/convez/p_workspace/nix-linguist/outputs/out/lib '
+NIX_LDFLAGS='-rpath /home/convez/p_workspace/nix-linguist/outputs/out/lib  -L/nix/store/d7mhlprb84m83vm0z1xw18jpxz3x5hzy-jq-1.7.1/lib -L/nix/store/d7mhlprb84m83vm0z1xw18jpxz3x5hzy-jq-1.7.1/lib'
 export NIX_LDFLAGS
 NIX_NO_SELF_RPATH='1'
 NIX_STORE='/nix/store'
@@ -56,7 +56,7 @@ OLDPWD=''
 export OLDPWD
 OPTERR='1'
 OSTYPE='linux-gnu'
-PATH='/nix/store/5yl5rscbbqh9b3r9ixi6cnzfaydq9n9r-patchelf-0.15.0/bin:/nix/store/dc6bahp3f5af2rxz3pal9m3kp4vx4rpy-gcc-wrapper-14.2.1.20250322/bin:/nix/store/24sdvjs6rfqs69d21gdn437mb3vc0svh-gcc-14.2.1.20250322/bin:/nix/store/nswsqm9wwhx0l48c8db0swc87171r2rk-glibc-2.40-66-bin/bin:/nix/store/cg09nslw3w6afyynjw484b86d47ic1cb-coreutils-9.7/bin:/nix/store/2zx2a8g7bkl2lkrql10hnjjpzz4wq09c-binutils-wrapper-2.44/bin:/nix/store/wcv8n2k53w8sbffpf716gxj6mjb5jf26-binutils-2.44/bin:/nix/store/3qhcmnpli1wg5hf91drj5jz6x6g76fgb-linguist/bin:/nix/store/cg09nslw3w6afyynjw484b86d47ic1cb-coreutils-9.7/bin:/nix/store/frspb25x6v43fwv6b0wna1fm5nsqcp0b-findutils-4.10.0/bin:/nix/store/8cs5vjkbwf2vicgms4km5k1kgbznhwip-diffutils-3.12/bin:/nix/store/1h8gf327cgid0jgjygrj31amp63mn7a7-gnused-4.9/bin:/nix/store/2wni3gbcf6fqwlfb2h9sv7jvqlpf1ylq-gnugrep-3.11/bin:/nix/store/f8x04xqd2cs274k0hgfzsrms6sby2fgx-gawk-5.3.2/bin:/nix/store/5jmcn57x2j9mkdr3j947cbja2hpxmhfn-gnutar-1.35/bin:/nix/store/04z4rhjadrnd0w3ib2sl42pa3xjgpf7p-gzip-1.14/bin:/nix/store/sysih19x8xx8l473d3qnr760hy758lkq-bzip2-1.0.8-bin/bin:/nix/store/agn71jakv0a9669k3zx5g9aqm2sl9z77-gnumake-4.4.1/bin:/nix/store/xg75pc4yyfd5n2fimhb98ps910q5lm5n-bash-5.2p37/bin:/nix/store/qd20g193gch8bj4h0h44wr97mw0bhkmf-patch-2.7.6/bin:/nix/store/fi495i6cz40rq1axig930jzyw7ln0zhm-xz-5.8.1-bin/bin:/nix/store/hb9v0qx9vk0420z5grlnv2y5wcf6dp6i-file-5.46/bin'
+PATH='/nix/store/5yl5rscbbqh9b3r9ixi6cnzfaydq9n9r-patchelf-0.15.0/bin:/nix/store/dc6bahp3f5af2rxz3pal9m3kp4vx4rpy-gcc-wrapper-14.2.1.20250322/bin:/nix/store/24sdvjs6rfqs69d21gdn437mb3vc0svh-gcc-14.2.1.20250322/bin:/nix/store/nswsqm9wwhx0l48c8db0swc87171r2rk-glibc-2.40-66-bin/bin:/nix/store/cg09nslw3w6afyynjw484b86d47ic1cb-coreutils-9.7/bin:/nix/store/2zx2a8g7bkl2lkrql10hnjjpzz4wq09c-binutils-wrapper-2.44/bin:/nix/store/wcv8n2k53w8sbffpf716gxj6mjb5jf26-binutils-2.44/bin:/nix/store/3qhcmnpli1wg5hf91drj5jz6x6g76fgb-linguist/bin:/nix/store/2yi7k5ay6xj73rbfqf170gms922rjm2d-jq-1.7.1-bin/bin:/nix/store/cg09nslw3w6afyynjw484b86d47ic1cb-coreutils-9.7/bin:/nix/store/frspb25x6v43fwv6b0wna1fm5nsqcp0b-findutils-4.10.0/bin:/nix/store/8cs5vjkbwf2vicgms4km5k1kgbznhwip-diffutils-3.12/bin:/nix/store/1h8gf327cgid0jgjygrj31amp63mn7a7-gnused-4.9/bin:/nix/store/2wni3gbcf6fqwlfb2h9sv7jvqlpf1ylq-gnugrep-3.11/bin:/nix/store/f8x04xqd2cs274k0hgfzsrms6sby2fgx-gawk-5.3.2/bin:/nix/store/5jmcn57x2j9mkdr3j947cbja2hpxmhfn-gnutar-1.35/bin:/nix/store/04z4rhjadrnd0w3ib2sl42pa3xjgpf7p-gzip-1.14/bin:/nix/store/sysih19x8xx8l473d3qnr760hy758lkq-bzip2-1.0.8-bin/bin:/nix/store/agn71jakv0a9669k3zx5g9aqm2sl9z77-gnumake-4.4.1/bin:/nix/store/xg75pc4yyfd5n2fimhb98ps910q5lm5n-bash-5.2p37/bin:/nix/store/qd20g193gch8bj4h0h44wr97mw0bhkmf-patch-2.7.6/bin:/nix/store/fi495i6cz40rq1axig930jzyw7ln0zhm-xz-5.8.1-bin/bin:/nix/store/hb9v0qx9vk0420z5grlnv2y5wcf6dp6i-file-5.46/bin'
 export PATH
 PS4='+ '
 RANLIB='ranlib'
@@ -78,7 +78,7 @@ export XDG_DATA_DIRS
 __structuredAttrs=''
 export __structuredAttrs
 _substituteStream_has_warned_replace_deprecation='false'
-buildInputs='/nix/store/3qhcmnpli1wg5hf91drj5jz6x6g76fgb-linguist'
+buildInputs='/nix/store/3qhcmnpli1wg5hf91drj5jz6x6g76fgb-linguist /nix/store/2186473hfwk15m3cmpddck6jp28sjmkl-jq-1.7.1-dev'
 export buildInputs
 buildPhase='{ echo "------------------------------------------------------------";
   echo " WARNING: the existence of this path is not guaranteed.";
@@ -157,7 +157,7 @@ declare -a pkgsBuildBuild=()
 declare -a pkgsBuildHost=('/nix/store/5yl5rscbbqh9b3r9ixi6cnzfaydq9n9r-patchelf-0.15.0' '/nix/store/d41c6ccm4yaq2czglxs10lzkynrmd399-update-autotools-gnu-config-scripts-hook' '/nix/store/jjhw2phnaip4kg0qjas3x3fsaifi8y0w-no-broken-symlinks.sh' '/nix/store/h9lc1dpi14z7is86ffhl3ld569138595-audit-tmpdir.sh' '/nix/store/m54bmrhj6fqz8nds5zcj97w9s9bckc9v-compress-man-pages.sh' '/nix/store/wgrbkkaldkrlrni33ccvm3b6vbxzb656-make-symlinks-relative.sh' '/nix/store/5yzw0vhkyszf2d179m0qfkgxmp5wjjx4-move-docs.sh' '/nix/store/fyaryjvghbkpfnsyw97hb3lyb37s1pd6-move-lib64.sh' '/nix/store/kd4xwxjpjxi71jkm6ka0np72if9rm3y0-move-sbin.sh' '/nix/store/pag6l61paj1dc9sv15l7bm5c17xn5kyk-move-systemd-user-units.sh' '/nix/store/cmzya9irvxzlkh7lfy6i82gbp0saxqj3-multiple-outputs.sh' '/nix/store/hxv896faph0rqxjq2ycxpcrbnngc95sz-patch-shebangs.sh' '/nix/store/cickvswrvann041nqxb0rxilc46svw1n-prune-libtool-files.sh' '/nix/store/xyff06pkhki3qy1ls77w10s0v79c9il0-reproducible-builds.sh' '/nix/store/z7k98578dfzi6l3hsvbivzm7hfqlk0zc-set-source-date-epoch-to-latest.sh' '/nix/store/pilsssjjdxvdphlg2h19p0bfx5q0jzkn-strip.sh' '/nix/store/dc6bahp3f5af2rxz3pal9m3kp4vx4rpy-gcc-wrapper-14.2.1.20250322' '/nix/store/2zx2a8g7bkl2lkrql10hnjjpzz4wq09c-binutils-wrapper-2.44' )
 declare -a pkgsBuildTarget=()
 declare -a pkgsHostHost=()
-declare -a pkgsHostTarget=('/nix/store/3qhcmnpli1wg5hf91drj5jz6x6g76fgb-linguist' )
+declare -a pkgsHostTarget=('/nix/store/3qhcmnpli1wg5hf91drj5jz6x6g76fgb-linguist' '/nix/store/2186473hfwk15m3cmpddck6jp28sjmkl-jq-1.7.1-dev' '/nix/store/2yi7k5ay6xj73rbfqf170gms922rjm2d-jq-1.7.1-bin' '/nix/store/d7mhlprb84m83vm0z1xw18jpxz3x5hzy-jq-1.7.1' )
 declare -a pkgsTargetTarget=()
 declare -a postFixupHooks=('noBrokenSymlinksInAllOutputs' '_makeSymlinksRelativeInAllOutputs' '_multioutPropagateDev' )
 declare -a postUnpackHooks=('_updateSourceDateEpochFromSourceRoot' )
